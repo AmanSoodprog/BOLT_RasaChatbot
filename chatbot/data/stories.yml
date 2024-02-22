@@ -1,0 +1,110 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Headache Inquiry
+  steps:
+  - intent: headache
+  - action: utter_headache
+  - action: utter_more
+
+- story: Chest Pain Inquiry
+  steps:
+  - intent: chest_pain
+  - action: utter_chest_pain
+- story: Cough Inquiry
+  steps:
+  - intent: cough
+  - action: utter_cough
+
+- story: Earache Inquiry
+  steps:
+  - intent: earache
+  - action: utter_earache
+
+- story: Toothache Inquiry
+  steps:
+  - intent: toothache
+  - action: utter_toothache
+
+- story: Eye Redness Inquiry
+  steps:
+  - intent: eye_redness
+  - action: utter_eye_redness
+
+- story: Eye Irritation Inquiry
+  steps:
+  - intent: eye_irritation
+  - action: utter_eye_irritation
+
+- story: Eye Infection Inquiry
+  steps:
+  - intent: eye_infection
+  - action: utter_eye_infection
+
+- story: fever
+  steps:
+    - intent: fever
+    - action: utter_fever
+
+- story: stomachache
+  steps:
+    - intent: stomachache
+    - action: utter_stomachache
+
+- story: sore_throat
+  steps:
+    - intent: sore_throat
+    - action: utter_sore_throat
+
+- story: runny_nose
+  steps:
+    - intent: runny_nose
+    - action: utter_runny_nose
+
+- story: sneezing
+  steps:
+    - intent: sneezing
+    - action: utter_sneezing
+
+- story: vomiting
+  steps:
+    - intent: vomiting
+    - action: utter_vomiting
+
+- story: diarrhea
+  steps:
+    - intent: diarrhea
+    - action: utter_diarrhea
+
+- story: covid
+  steps:
+    - intent: covid
+    - action: utter_covid

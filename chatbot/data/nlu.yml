@@ -1,0 +1,239 @@
+version: "3.1"
+
+nlu:
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: headache
+  examples: |
+    - What should I do if I have a headache?
+    - How can I relieve a headache?
+    - What are the symptoms of a severe headache?
+- intent: chest_pain
+  examples: |
+    - What should I do if I have chest pain?
+    - How can I relieve chest pain?
+    - What are the symptoms of a heart attack?
+- intent: cough
+  examples: |
+    - What should I do if I have a cough?
+    - My throat is paining
+    - How can I relieve a cough?
+    - What are the symptoms of a severe cough?
+- intent: earache
+  examples: |
+    - I have an earache
+    - My ear hurts
+    - What should I do for an earache?
+- intent: toothache
+  examples: |
+    - I have a toothache
+    - My tooth hurts
+    - What should I do for a toothache?
+- intent: eye_redness
+  examples: |
+    - My eyes are red
+    - My eyes are itchy
+    - What should I do for red eyes?
+- intent: eye_irritation
+  examples: |
+    - My eyes are irritated
+    - My eyes are burning
+    - What should I do for irritated eyes?
+- intent: eye_infection
+  examples: |
+    - I have an eye infection
+    - My eyes are swollen
+    - What should I do for an eye infection?
+
+
+- intent: fever
+  examples: |
+    - I have a fever
+    - I am running a temperature
+    - I feel hot
+    - I am sweating
+    - I have chills
+    - I feel cold
+    - I am shivering
+    - My temperature is high
+    - I have a high temperature
+    - I feel feverish
+
+- intent: stomachache
+  examples: |
+    - I have a stomachache
+    - My stomach hurts
+    - I have a tummy ache
+    - I have a bellyache
+    - I have a stomach cramp
+    - I have a stomach pain
+    - I have a stomach upset
+    - I have a stomach bug
+    - I have a stomach virus
+    - I have a stomach flu
+
+- intent: sore_throat
+  examples: |
+    - I have a sore throat
+    - My throat is sore
+    - My throat hurts
+    - My throat is scratchy
+    - My throat is itchy
+    - My throat is burning
+    - My throat is inflamed
+    - My throat is swollen
+    - My throat is red
+    - My throat is painful
+
+- intent: runny_nose
+  examples: |
+    - I have a runny nose
+    - My nose is running
+    - I have a stuffy nose
+    - My nose is stuffy
+    - I have a blocked nose
+    - My nose is blocked
+    - I have a nasal congestion
+    - I have a nasal blockage
+    - I have a nasal discharge
+    - I have a nasal drip
+
+- intent: sneezing
+  examples: |
+    - I am sneezing
+    - I can't stop sneezing
+    - I have a sneeze attack
+    - I have a sneezing fit
+    - I am sneezing a lot
+    - My nose is ticklish
+    - I have an itchy nose
+    - I have an irritated nose
+    - I have a sensitive nose
+    - I have a runny nose
+
+- intent: vomiting
+  examples: |
+    - I am vomiting
+    - I am throwing up
+    - I am puking
+    - I have nausea
+    - I feel nauseous
+    - I feel queasy
+    - I feel sick
+    - I have an upset stomach
+    - I have indigestion
+    - I have food poisoning
+
+- intent: diarrhea
+  examples: |
+    - I have diarrhea
+    - I have loose stools
+    - I have watery stools
+    - I have frequent bowel movements
+    - I have stomach cramps
+    - I have abdominal pain
+    - I have abdominal cramps
+    - I have stomach pain
+    - I have a stomach ache
+    - I have a tummy ache
+
+- intent: covid
+  examples: |
+    - I have covid
+    - I tested positive for covid
+    - I have covid symptoms
+    - I have coronavirus
+    - I have covid-19
+    - I have the coronavirus
+    - I have the covid-19 virus
+    - I am infected with covid
+    - I am infected with coronavirus
+    - I am infected with covid-19
+

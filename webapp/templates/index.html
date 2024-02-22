@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+</head>
+<body>
+    <h1>Test answering</h1>
+    <form action="/chatbot" method="post">
+        <label for="message">Message:</label><br>
+        <input type="text" id="message" name="message"><br>
+        <input type="submit" value="Send">
+    </form>
+
+    {% if message %}
+    <p>You: {{ message }}</p>
+    {% endif %}
+    {% if chatbot_response %}
+    <p>Chatbot: {{ chatbot_response }}</p>
+    {% endif %}
+
+
+
+</body>
+</html>

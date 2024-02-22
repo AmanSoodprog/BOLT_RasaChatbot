@@ -1,0 +1,96 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Headache Inquiry Rule
+  steps:
+  - intent: headache
+  - action: utter_headache
+  - action: utter_more
+- rule: Chest Pain Inquiry Rule
+  steps:
+  - intent: chest_pain
+  - action: utter_chest_pain
+- rule: Cough Inquiry Rule
+  steps:
+  - intent: cough
+  - action: utter_cough
+
+- rule: Respond to earache intent
+  steps:
+    - intent: earache
+    - action: utter_earache
+
+- rule: Respond to toothache intent
+  steps:
+    - intent: toothache
+    - action: utter_toothache
+
+- rule: Respond to eye_redness intent
+  steps:
+    - intent: eye_redness
+    - action: utter_eye_redness
+
+- rule: Respond to eye_irritation intent
+  steps:
+    - intent: eye_irritation
+    - action: utter_eye_irritation
+
+- rule: Respond to eye_infection intent
+  steps:
+    - intent: eye_infection
+    - action: utter_eye_infection
+
+
+- rule: Respond to fever
+  steps:
+    - intent: fever
+    - action: utter_fever
+
+- rule: Respond to stomachache
+  steps:
+    - intent: stomachache
+    - action: utter_stomachache
+
+- rule: Respond to sore_throat
+  steps:
+    - intent: sore_throat
+    - action: utter_sore_throat
+
+- rule: Respond to runny_nose
+  steps:
+    - intent: runny_nose
+    - action: utter_runny_nose
+
+- rule: Respond to sneezing
+  steps:
+    - intent: sneezing
+    - action: utter_sneezing
+
+- rule: Respond to vomiting
+  steps:
+    - intent: vomiting
+    - action: utter_vomiting
+
+- rule: Respond to diarrhea
+  steps:
+    - intent: diarrhea
+    - action: utter_diarrhea
+
+- rule: Respond to covid
+  steps:
+    - intent: covid
+    - action: utter_covid
+
+
+

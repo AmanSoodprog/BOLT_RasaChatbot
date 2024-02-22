@@ -1,0 +1,105 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - headache
+  - chest_pain
+  - cough
+  - earache
+  - toothache
+  - eye_redness
+  - eye_irritation
+  - eye_infection
+  - fever
+  - stomachache
+  - sore_throat
+  - runny_nose
+  - sneezing
+  - vomiting
+  - diarrhea
+  - covid
+  
+
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_headache:
+  - text: "If you have a headache, try to rest in a quiet, dark room. Apply a cold compress to your forehead or the back of your neck. Avoid bright lights and loud noises. If the headache is severe or accompanied by other symptoms (e.g., confusion, weakness, numbness), seek medical attention."
+  utter_chest_pain:
+  - text: "If you have chest pain, especially if it is sudden, severe, or accompanied by shortness of breath, nausea, or sweating, call 911 immediately. Do not drive yourself to the hospital."
+  utter_cough:
+  - text: "If you have a cough, try to stay hydrated and get plenty of rest. Use over-the-counter cough medicine if needed. If the cough is persistent or accompanied by other symptoms (e.g., fever, chest pain, difficulty breathing), seek medical attention."
+  utter_earache:
+  - text: "To relieve an earache, you can try applying a warm compress, using over-the-counter ear drops, and taking over-the-counter pain relievers."
+  utter_toothache:
+  - text: "To relieve a toothache, you can try rinsing your mouth with warm salt water, using over-the-counter pain relievers, and applying a cold compress to your cheek."
+  utter_eye_redness:
+  - text: "To relieve red eyes, you can try using over-the-counter eye drops, applying a cold compress to your eyes, and avoiding rubbing your eyes."
+  utter_eye_irritation:
+  - text: "To relieve irritated eyes, you can try using over-the-counter eye drops, applying a cold compress to your eyes, and avoiding rubbing your eyes."
+  utter_eye_infection:
+  - text: "To relieve an eye infection, you can try using over-the-counter eye drops, applying a warm compress to your eyes, and avoiding wearing contact lenses."
+
+  utter_ok:
+  - text: "Do you need any more help?"
+
+
+  utter_fever:
+    - text: "I'm sorry to hear that you have a fever. Please make sure to rest, drink plenty of fluids, and consider taking fever-reducing medication if necessary. If your fever persists or worsens, it's important to seek medical attention."
+
+  utter_stomachache:
+    - text: "I'm sorry to hear that you have a stomachache. It could be due to various reasons like indigestion, food poisoning, or a stomach virus. Try to rest, avoid heavy meals, and drink clear fluids. If your symptoms persist or worsen, please consult a healthcare professional."
+
+  utter_sore_throat:
+    - text: "I'm sorry to hear that you have a sore throat. It could be due to various reasons like a cold, flu, or strep throat. Try to rest, drink warm liquids, and consider using throat lozenges. If your symptoms persist or worsen, please consult a healthcare professional."
+
+  utter_runny_nose:
+    - text: "I'm sorry to hear that you have a runny nose. It could be due to various reasons like allergies, a cold, or sinusitis. Try to rest, drink plenty of fluids, and consider using a saline nasal spray. If your symptoms persist or worsen, please consult a healthcare professional."
+
+  utter_sneezing:
+    - text: "I'm sorry to hear that you're sneezing. It could be due to various reasons like allergies, a cold, or sinusitis. Try to rest, drink plenty of fluids, and consider using a saline nasal spray. If your symptoms persist or worsen, please consult a healthcare professional."
+
+  utter_vomiting:
+    - text: "I'm sorry to hear that you're vomiting. It could be due to various reasons like food poisoning, a stomach virus, or gastroenteritis. Try to rest, avoid solid foods, and drink clear fluids. If your symptoms persist or worsen, please consult a healthcare professional."
+
+  utter_diarrhea:
+    - text: "I'm sorry to hear that you have diarrhea. It could be due to various reasons like food poisoning, a stomach virus, or gastroenteritis. Try to rest, avoid solid foods, and drink clear fluids. If your symptoms persist or worsen, please consult a healthcare professional."
+
+  utter_covid:
+    - text: "I'm sorry to hear that you have COVID-19. It's important to follow the guidelines provided by health authorities, such as self-isolating, monitoring your symptoms, and seeking medical attention if necessary. Please take care of yourself and follow the advice of healthcare professionals."
+  utter_more:
+    - text: "Do you need help with anything else?"
+actions:
+  - utter_more
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
